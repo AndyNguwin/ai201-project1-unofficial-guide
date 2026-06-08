@@ -10,7 +10,7 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
-The domain I chose is on the K-Pop group NewJeans, with many talking points such as who they are, what they achieved, commentary on their music style and influence, and also their legal dispute that halted their group activities. Official channels ran by the group's company only acts as promotional sources and presents only one viewpoint. The sources I've gathered combines articles from journalists and commentary from fans that provide information that official sources wouldn't care to cover.
+The domain I chose is on the K-Pop group NewJeans, with many talking points such as who they are, what they achieved, commentary on their music style and influence, and also their legal dispute that halted their group activities. Official channels ran by the group's company only acts as promotional sources and presents only one viewpoint. The sources I've gathered combines articles from journalists and commentary from fans that provide information that official sources wouldn't care to cover such as music analysis, group history, and current legal disputes.
 ---
 
 ## Documents
@@ -47,13 +47,14 @@ The domain I chose is on the K-Pop group NewJeans, with many talking points such
      State your chunk size (in tokens or characters), overlap size, and explain why those
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
-
+Semantic chunking
 **Chunk size:**
-
+250 tokens
 **Overlap:**
+50 tokens
 
 **Reasoning:**
-
+Most of the sources I use are articles or multiple paragraphs rather than pages that have uniform structure. I do have Wikipedia and similar sources, but not all of my sources have clearly defined structure, and semantic chunking can still work with structure to retain contextual meaning. Given that the embedding model I'm using has a 256 token context length, I think 250 tokens is a reasonable chunk size to maintain a balance between precision and contextual meaning, given that some sources are quite lengthy. A 50 token overlap helps retain a bit of context from the previous chunk without repeating too much information since it is only around a 15% portion.
 ---
 
 ## Retrieval Approach
@@ -65,10 +66,11 @@ The domain I chose is on the K-Pop group NewJeans, with many talking points such
      support, accuracy on domain-specific text, latency? -->
 
 **Embedding model:**
-
+all-MiniLM-L6-v2 via sentence-transformers
 **Top-k:**
-
+4
 **Production tradeoff reflection:**
+If this was deployed for production and real users, a I'd prioritize accuracy on domain-specific text and latency over context length and multilingual support. The sources I use are specifically English and don't have much non-English terms (possibly none at all). It would help expand the userbase to more languages, but I wouldn't say its more important to the user experience of getting highly relevant and quality responses based on the domain quickly. I don't think context length needs to be extended immensely since the chunk sizes for my sources seem balanced already.
 
 ---
 
@@ -81,11 +83,11 @@ The domain I chose is on the K-Pop group NewJeans, with many talking points such
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | Who are the members of NewJeans? | Minji, Hanni, Danielle, Haerin, and Hyein|
+| 2 | What label are NewJeans signed under? | ADOR, a sub-label of HYBE |
+| 3 | What was the first release EP NewJeans released? | "New Jeans" |
+| 4 | What were NewJeans' most recent music release? | The album "Supernatural" |
+| 5 | Who's contract was terminated in NewJeans? | Danielle |
 
 ---
 
@@ -95,9 +97,9 @@ The domain I chose is on the K-Pop group NewJeans, with many talking points such
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1. Despite using a reasonable chunking size, chunks might still be small and may split between key information across boundaries, especially for my sources that are more lengthy. Ideally, I would like to try 350 token chunk size, but the embedding model's maximum context length is 256 tokens. Embedding model may miscalculate similarity/contextual meaning of text as well and split incorrectly. 
 
-2.
+2. Off-topic retrieval may happen depending on the words used in the query and how my sources were chunked. It's possible for a chunk to match to a query better than the "correct" or most relevant chunk given that it will all be based and calculated by the embedding model. For example, maybe a chunk uses a specific word that was mentioned in the query, but the more relevant chunk doesn't and is ranked lower in retrieval.
 
 ---
 
@@ -108,7 +110,7 @@ The domain I chose is on the K-Pop group NewJeans, with many talking points such
      Label each stage with the tool or library you're using.
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
-
+![](image.png)
 ---
 
 ## AI Tool Plan
@@ -122,6 +124,16 @@ The domain I chose is on the K-Pop group NewJeans, with many talking points such
      "I'll use AI to help me code" is not a plan.
      "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
      with my specified chunk size and overlap" is a plan. -->
+
+All AI-assisted coding I use will be with CodePath's provided subscription for Claude Code.
+
+For my ingestion and chunking part, I'll give Claude my Documents and Chunking Strategy section and also Architecture Diagram, asking it to implement a chunk_text() function with my proposed chunk size and overlap, taking in source files (most likely .txt instead of web scraping) and return a list of chunks represented in a dictionary that holds metadata such as "text", "source", and "chunk_id". I will verify the result by printing the amount of chunks and details of 1-2 example chunks that were returned.
+
+For embedding and storage, I'll give Claude my Architecture Diagram, asking it to implement a embed_and_store() function that uses my specified embedding model and ChromaDB to embed the list of chunks and store into the vector database while maintaining the metadata. I will verify the result by printing the length of the vector database to ensure it has all the chunks stored and details of 1 stored chunk.
+
+For retrieval, I'll give Claude my Retrieval Approach section and the Architecture Diagram, asking it to implement a retrieve() function that takes in a query and my top-k to return a list of the k amount of most relevant chunks to the query that are stored in the vector database. To verify, I'll print the amount of chunks retrieved and their metadata to check if they were relevant to the query such as checking similarity/distance score.
+
+For generation, I'll give Claude my Architecture Diagram and ask it to implement a generate_response() function that takes in a query and a list of retrieved chunks and generates a grounded response to the query using the retrieved chunks. It will create and prompt Groq for a grounded response and will include a system prompt that provides grounding instructions and metadata-prefixed chunks for context. It will only respond if the retrieved chunks it receives are very relevant to the query, possibly a threshold of 85% confidence. Each answer must cite the source it got it from (using the metadata of the chunks). If it isn't confident in answering, say so.
 
 **Milestone 3 — Ingestion and chunking:**
 
