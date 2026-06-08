@@ -10,7 +10,7 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
-
+The domain I chose is on the K-Pop group NewJeans, with many talking points such as who they are, what they achieved, commentary on their music style and influence, and also their legal dispute that halted their group activities. Official channels ran by the group's company only acts as promotional sources and presents only one viewpoint. The sources I've gathered combines articles from journalists and commentary from fans that provide information that official sources wouldn't care to cover.
 ---
 
 ## Documents
@@ -20,16 +20,24 @@
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | Kprofiles | Profile and fun facts about each NewJeans member | https://kprofiles.com/newjeans-members-profile/ |
+| 2 | Wikipedia — NewJeans | General overview of the group's formation and history | https://en.wikipedia.org/wiki/NewJeans |
+| 3 | Wikipedia — NewJeans Discography | Complete list of EPs, singles, and single albums with release dates and chart positions | https://en.wikipedia.org/wiki/NewJeans_discography |
+| 4 | Wikipedia — New Jeans EP | Breakdown of their debut EP including themes, sound, and chart performance | https://en.wikipedia.org/wiki/New_Jeans_(EP) |
+| 5 | Wikipedia — OMG EP | Breakdown of their second release including themes, sound, and chart performance | https://en.wikipedia.org/wiki/OMG_(NewJeans_EP) |
+| 6 | Wikipedia — Get Up EP | Breakdown of their most commercially successful EP including critical reception | https://en.wikipedia.org/wiki/Get_Up_(NewJeans_EP) |
+| 7 | Billboard — Chart Rise Explainer | Covers NewJeans' Billboard Hot 100 entries, Billboard 200 #1 album, and Group of the Year award | https://www.billboard.com/music/chart-beat/billboard-explains-newjeans-rise-on-charts-1235611739/ |
+| 8 | Billboard — Gods/League of Legends Interview | Article covering their League of Legends Worlds 2023 anthem collaboration | https://www.billboard.com/music/pop/newjeans-interview-gods-league-of-legends-world-championships-2023-exclusive-1235519282/ |
+| 9 | Harvard Crimson — Attention Review | Analysis of NewJeans' debut sound, Y2K aesthetic, and "newtro" cultural concept | https://www.thecrimson.com/article/2022/9/20/newjeans-kpop-girlgroup-hybe-attention-debut-single/ |
+| 10 | Mixmag Asia — K-Pop Genre Evolution | Genre deep-dive into how NewJeans incorporated UK garage, Baltimore club, and Jersey club into K-pop | https://mixmag.asia/feature/new-jeans-k-pop-evolution-aesthetic-dance-music-genres-breaks-bass |
+| 11 | Koreaboo — Records Shattered | Breakdown of Spotify, Melon, and Billboard records broken in their debut year | https://www.koreaboo.com/lists/records-newjeans-shattered-in-first-year/ |
+| 12 | Euronews — Guinness World Record | Covers NewJeans becoming the fastest K-pop act to hit 1 billion Spotify streams | https://www.euronews.com/culture/2023/05/09/newjeans-break-guinness-world-record-to-become-fastest-k-pop-act-to-hit-1-billion-streams- |
+| 13 | Koreaboo — Brand Deals | Overview of 15+ NewJeans brand partnerships including Coca-Cola, Nike, Levi's, McDonald's, and Apple | https://www.koreaboo.com/lists/newjeans-brand-ambassador-deals-global-impact-style-adaptability/ |
+| 14 | CNBC — Contract Ruling | Covers the October 2025 court ruling upholding NewJeans' contracts with ADOR through 2029 | https://www.cnbc.com/2025/10/30/newjeans-contract-ruling-valid-hybe-gains-almost-630-million-.html |
+| 15 | Korea Herald — Legal Aftermath | Covers NewJeans' legal dispute and battles extending into 2026 | https://www.koreaherald.com/article/10640428 |
+| 16 | Korea Times — Danielle Exit | Dedicated coverage of Danielle's contract termination and each member's return status as of December 2025 | https://www.koreatimes.co.kr/entertainment/k-pop/20251229/newjeans-full-group-return-derailed-as-ador-ends-danielles-contract |
+| 17 | K-Crush — Complete Guide | Comprehensive guide covering the group's music, members, legal summary, and 2026 status | https://k-crush.com/newjeans-complete-guide-2026/ |
+| 18 | K-Crush — Member Status Timeline | Month-by-month tracker of each member's return or departure status, last updated May 2026 | https://k-crush.com/newjeans-timeline-2026-updates/ |
 
 ---
 
