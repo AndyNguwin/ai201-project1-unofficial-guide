@@ -133,6 +133,7 @@ For retrieval, I'll give Claude my Retrieval Approach section and the Architectu
 For generation, I'll give Claude my Architecture Diagram and ask it to implement a generate_response() function that takes in a query and a list of retrieved chunks and generates a grounded response to the query using the retrieved chunks. It will create and prompt Groq for a grounded response and will include a system prompt that provides grounding instructions and metadata-prefixed chunks for context. It will only respond if the retrieved chunks it receives are very relevant to the query, possibly a threshold of 85% confidence. Each answer must cite the source it got it from (using the metadata of the chunks). If it isn't confident in answering, say so.
 
 **Milestone 3 — Ingestion and chunking:**
+124 chunks from 15 documents
 
 **Milestone 4 — Embedding and retrieval:**
 
