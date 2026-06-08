@@ -10,8 +10,26 @@ documents the supporting chunks were pulled from, with their similarity scores.
 
 import gradio as gr
 
+from chunking import chunk_text, embed_and_store
 from generate import generate_response
+from ingestion import clean_document, load_document
 from retrieval import retrieve
+
+
+def rebuild_vector_db() -> None:
+    """Re-chunk all documents and rebuild the ChromaDB collection from scratch.
+
+    Runs the full ingestion -> chunking -> embedding pipeline so the UI always
+    reflects the current CHUNK_SIZE / OVERLAP settings in chunking.py. Because
+    embed_and_store() deletes and recreates the collection, this fully replaces
+    any previously stored vectors.
+    """
+    print("Rebuilding vector database from documents...")
+    documents = [clean_document(doc) for doc in load_document()]
+    chunks = chunk_text(documents)
+    collection = embed_and_store(chunks)
+    print(f"Vector DB ready: {collection.count()} chunks "
+          f"from {len(documents)} documents.\n")
 
 
 def _display_name(source: str) -> str:
@@ -70,4 +88,6 @@ with gr.Blocks(title="NewJeans — Unofficial Guide") as demo:
 
 
 if __name__ == "__main__":
+    # Rebuild the vector DB so the UI reflects the current chunking config.
+    rebuild_vector_db()
     demo.launch()
