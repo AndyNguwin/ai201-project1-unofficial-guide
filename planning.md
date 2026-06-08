@@ -44,14 +44,14 @@ The domain I chose is on the K-Pop group NewJeans, with many talking points such
      State your chunk size (in tokens or characters), overlap size, and explain why those
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
-Semantic chunking
+
 **Chunk size:**
 250 tokens
 **Overlap:**
 50 tokens
 
 **Reasoning:**
-Most of the sources I use are articles or multiple paragraphs rather than pages that have uniform structure. I do have Wikipedia and similar sources, but not all of my sources have clearly defined structure, and semantic chunking can still work with structure to retain contextual meaning. Given that the embedding model I'm using has a 256 token context length, I think 250 tokens is a reasonable chunk size to maintain a balance between precision and contextual meaning, given that some sources are quite lengthy. A 50 token overlap helps retain a bit of context from the previous chunk without repeating too much information since it is only around a 15% portion.
+Given that the embedding model I'm using has a 256 token context length and that some of my sources are quite lengthy, I think 250 tokens is a reasonable chunk size to maintain a balance between precision and contextual meaning. A 50 token overlap helps retain a bit of context from the previous chunk without repeating too much information since it is only around a 15% portion.
 ---
 
 ## Retrieval Approach
