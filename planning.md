@@ -67,7 +67,7 @@ all-MiniLM-L6-v2 via sentence-transformers
 **Top-k:**
 4
 **Production tradeoff reflection:**
-If this was deployed for production and real users, a I'd prioritize accuracy on domain-specific text and latency over context length and multilingual support. The sources I use are specifically English and don't have much non-English terms (possibly none at all). It would help expand the userbase to more languages, but I wouldn't say its more important to the user experience of getting highly relevant and quality responses based on the domain quickly. I don't think context length needs to be extended immensely since the chunk sizes for my sources seem balanced already.
+If this was deployed for production and real users, a I'd prioritize accuracy on domain-specific text and latency over context length and multilingual support. The sources I use are mostly English and don't have many non-English terms. It would help expand the userbase to more languages, but I wouldn't say its more important to the user experience of getting highly relevant and quality responses based on the domain quickly. I don't think context length needs to be extended immensely since the chunk sizes for my sources seem balanced already.
 
 ---
 
@@ -80,10 +80,10 @@ If this was deployed for production and real users, a I'd prioritize accuracy on
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | Who are the members of NewJeans? | Minji, Hanni, Danielle, Haerin, and Hyein|
-| 2 | What label are NewJeans signed under? | ADOR, a sub-label of HYBE |
-| 3 | What was the first release EP NewJeans released? | "New Jeans" |
-| 4 | What were NewJeans' most recent music release? | The album "Supernatural" |
+| 1 | Who are the members of NewJeans? | Minji, Hanni, Haerin, and Hyein|
+| 2 | What label are NewJeans signed under? | ADOR |
+| 3 | What was the first EP NewJeans released? | "New Jeans" |
+| 4 | What was NewJeans' most recent music release? | "Supernatural" |
 | 5 | Who's contract was terminated in NewJeans? | Danielle |
 
 ---
@@ -130,7 +130,7 @@ For embedding and storage, I'll give Claude my Architecture Diagram, asking it t
 
 For retrieval, I'll give Claude my Retrieval Approach section and the Architecture Diagram, asking it to implement a retrieve() function that takes in a query and my top-k to return a list of the k amount of most relevant chunks to the query that are stored in the vector database. To verify, I'll print the amount of chunks retrieved and their metadata to check if they were relevant to the query such as checking similarity/distance score.
 
-For generation, I'll give Claude my Architecture Diagram and ask it to implement a generate_response() function that takes in a query and a list of retrieved chunks and generates a grounded response to the query using the retrieved chunks. It will create and prompt Groq for a grounded response and will include a system prompt that provides grounding instructions and metadata-prefixed chunks for context. It will only respond if the retrieved chunks it receives are very relevant to the query. Each answer must cite the source it got it from (using the metadata of the chunks). If it isn't confident in answering, say so.
+For generation, I'll give Claude my Architecture Diagram and ask it to implement a generate_response() function that takes in a query and a list of retrieved chunks and generates a grounded response to the query using the retrieved chunks. It will create and prompt Groq for a grounded response and will include a system prompt that provides grounding instructions and metadata-prefixed chunks for context. It will only respond if the retrieved chunks it receives are very relevant to the query. Each answer must cite the source it got it from (using the metadata of the chunks). If it isn't confident in answering, it will say so.
 
 **Milestone 3 — Ingestion and chunking:**
 124 chunks from 15 documents
