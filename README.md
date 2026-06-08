@@ -56,7 +56,7 @@ The domain I chose is on the K-Pop group NewJeans, with many talking points such
 **Overlap:**
 50 tokens
 **Why these choices fit your documents:**
-Given that the embedding model I'm using has a 256 token context length and that some of my sources are quite lengthy, I think 250 tokens is a reasonable chunk size to maintain a balance between precision and contextual meaning. It's a size that can contain a focused topic, paragraph, or interview answer without having too much noise. A 50 token overlap helps retain a bit of context from the previous chunk without repeating too much information since it is only around a 15% portion.
+Given that the embedding model I'm using has a 256 token context length and that some of my sources are quite lengthy, I think 250 tokens is a reasonable chunk size to maintain a balance between precision and contextual meaning. It's a size that can contain a focused topic, paragraph, or interview answer without having too much noise. A 50 token overlap helps retain a bit of context from the previous chunk without repeating too much information since it is only around a 20% portion.
 **Final chunk count:**
 124 chunks from 15 documents
 
@@ -164,9 +164,9 @@ Ador added that it is currently discussing when and how to publicly address vari
      latency, and local vs. API-hosted. -->
 
 **Model used:**
-all-MiniLM-L6-v2 via sentence-transformers with top_k=4
+all-MiniLM-L6-v2 via sentence-transformers with top_k=4.
+This embedding model was recommended in the project write-up and also the same one presented in the lab. A top_k of 4 is enough to not have the system feel constrained during retrieval, adding in some flexibility to the chunks it retrieves without adding too much noise or irrelevant chunks to the query.
 
-This embedding model was the recommended one and also the same one presented in the lab. A top_k of 4 is enough to not have the system feel constrained during retrieval, adding in some flexibility to the chunks it retrieves without adding too much noise or irrelevant chunks to the query.
 **Production tradeoff reflection:**
 If this was deployed for production and real users, a I'd prioritize accuracy on domain-specific text and latency over context length and multilingual support. The sources I use are mostly English and don't have many non-English terms. It would help expand the userbase to more languages, but I wouldn't say its more important to the user experience of getting highly relevant and quality responses based on the domain quickly. I don't think context length needs to be extended immensely since the chunk sizes for my sources seem balanced already.
 ---
@@ -219,7 +219,7 @@ Each query below was run through `retrieve()` (top-k = 4). Chunks are listed mos
 
 **System prompt grounding instruction:**
 In the system prompt, I made sure that it knew it's domain it will be answering in (NewJeans) and the rules to follow. The most important rule is to answer solely based on the context of the retrieved chunks I would attach. If it was not confident in answering the question based on the context provided, it will state that it doesn't know rather than stating a possibly wrong answer. This is so that the system won't answer questions that are out of its scope or when it doesn't have the necessary information for it. I also tell it to cite its sources inline with bracketed numbers similar to an academic style or a wiki. I pass in the context in the format of a mapped list, where each chunk is a numbered and source-labeled block with its text.
-
+```
 """\
 You are a knowledgeable assistant answering questions about the K-pop group \
 NewJeans. You must answer using ONLY the information in the provided context \
@@ -238,8 +238,39 @@ numbers that appear in the context; never invent a number.
 inline [n] markers. The source list is added automatically.
 5. Be concise and factual. Do not repeat the question or pad the answer.\
 """
+```
 **How source attribution is surfaced in the response:**
-Sources are cited inline with the generated response using bracketed numbers similar to an academic style or wiki. The model is instructed to cite its sources, which comes from the context that gets passed in. I also concatenate a mapped list of sources that matches to the numbers at the end of its answer. 
+Sources are cited inline with the generated response using bracketed numbers similar to an academic style or wiki. The model is instructed to cite its sources, which comes from the context that gets passed in. I also concatenate a mapped list of sources that matches to the numbers at the end of its answer.
+
+**Example responses:**
+
+```
+Query: Who are the members of NewJeans?
+
+The members of NewJeans are Minji, Hanni, Haerin, and Hyein [1][2]. They were originally a 5-member group, but Danielle's contract was terminated on December 29, 2025 [2].
+
+Sources:
+[1] K-Crush - NewJeans The Complete Guide to the Group That Changed K-Pop (2026 Update)
+[2] Kprofiles - NewJeans Members Profile
+```
+
+```
+Query: What label is NewJeans signed under?
+
+NewJeans is signed under ADOR, a sub-label of HYBE [1].
+
+Sources:
+[1] K-Crush - NewJeans The Complete Guide to the Group That Changed K-Pop (2026 Update)
+```
+
+```
+Query (out of scope): What courses does CodePath offer for summer 2026?
+
+I don't have enough information in the provided sources to answer that.
+```
+
+The out-of-scope query has no relevant chunks in the vector database, so rather than guessing, the system follows its grounding instruction and states that it can't answer.
+
 ---
 
 ## Evaluation Report
@@ -281,10 +312,10 @@ Sources are cited inline with the generated response using bracketed numbers sim
  I don't have enough information in the provided sources to answer that, as the most recent information is from 2023 [1][2][3] and the guide is from 2026 [4], but it does not specify their most recent music release.<br><br>Sources:<br>[1] Euronews - NewJeans break Guinness World Record to become fastest K-pop act to hit 1 billion streams on Spotify<br>[2] Wikipedia - NewJeans<br>[3] Billboard Explains - NewJeans’ Fast Rise on the Charts<br>[4] K-Crush - NewJeans The Complete Guide to the Group That Changed K-Pop (2026 Update) 
 
 **Root cause (tied to a specific pipeline stage):**
-This relates to the retrieval part of the pipeline. I expected the system to pull from the Wikipedia page that was solely focused on NewJeans' discography, but due to the structure and content of the page, the system couldn't relate the chunks/source to the question. The discography page uses specific words in the table such as "extended play," but the question might be too broad asking for "music" instead of "extended play," which would've helped retrieve chunks from this source.
+I think this relates to the retrieval part of the pipeline. I expected the system to pull from the Wikipedia page that was solely focused on NewJeans' discography, but due to the structure and content of the page, the system couldn't relate the chunks/source to the question. The discography page uses specific words in the table such as "extended play," but the question might be too broad asking for "music" instead of "extended play," which would've helped retrieve chunks from this source. The question also didn't specify a specific timeframe for what "recent" could mean, because it seemed like the system didn't consider 2023 as recent.
 
 **What you would change to fix it:**
-This makes me think if there was a larger "k" value for more chunks in the context, this system maybe would've answered more accurately, but it ultimately depends if the embeddings/contextual meanings are calculated to be close to each other.
+This makes me think if there was a larger "k" value for more chunks in the context, this system maybe would've answered more accurately, but it ultimately depends if the embeddings/contextual meanings are calculated to be close to each other. Another approach could be storing a short summary of what each source is about or somehow maintain context of what the sources provide rather than just the name of it and the text is contains. Maybe then it could relate a discography timeline wiki page to the question.
 
 ---
 
