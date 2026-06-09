@@ -51,7 +51,7 @@ The domain I chose is on the K-Pop group NewJeans, with many talking points such
 50 tokens
 
 **Reasoning:**
-Given that the embedding model I'm using has a 256 token context length and that some of my sources are quite lengthy, I think 250 tokens is a reasonable chunk size to maintain a balance between precision and contextual meaning. A 50 token overlap helps retain a bit of context from the previous chunk without repeating too much information since it is only around a 15% portion.
+Given that the embedding model I'm using has a 256 token context length and that some of my sources are quite lengthy, I think 250 tokens is a reasonable chunk size to maintain a balance between precision and contextual meaning. A 50 token overlap helps retain a bit of context from the previous chunk without repeating too much information since it is only around a 10% portion.
 ---
 
 ## Retrieval Approach

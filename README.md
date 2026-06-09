@@ -21,24 +21,25 @@ The domain I chose is on the K-Pop group NewJeans, with many talking points such
 <!-- List every source you collected documents from.
      Be specific: include URLs, subreddit names, forum thread titles, or file names.
      Aim for variety — sources that together cover different subtopics or perspectives. -->
+*Sources were manually copy-and-pasted into a .txt file instead of web scraping. Both the filepath and URLs are presented in the table.*
 
-| # | Source | Type | URL or file path |
-|---|--------|------|-----------------|
-| 1 | Kprofiles | Profile and fun facts about each NewJeans member | documents/Kprofiles - NewJeans Members Profile.txt |
-| 2 | Wikipedia — NewJeans | General overview of the group's formation and history | documents/Wikipedia - NewJeans.txt |
-| 3 | Wikipedia — NewJeans Discography | Complete list of EPs, singles, and single albums with release dates and chart positions | documents/Wikipedia - NewJeans Discography.txt |
-| 4 | Billboard — Chart Rise Explainer | Covers NewJeans' Billboard Hot 100 entries, Billboard 200 #1 album, and Group of the Year award | documents/Billboard Explains - NewJeans’ Fast Rise on the Charts.txt |
-| 5 | Billboard — Gods/League of Legends Interview | Article covering their League of Legends Worlds 2023 anthem collaboration | documents/Billboard - NewJeans Talks ‘Surreal’ Experience Performing ‘Gods’ at ‘League of Legends’ World Championships Exclusive.txt |
-| 6 | Harvard Crimson — Attention Review | Analysis of NewJeans' debut sound, Y2K aesthetic, and "newtro" cultural concept | documents/The Harvard Crimson - ‘Attention’ Review NewJeans Crafts K-Pop’s Y2K Time Capsule.txt |
-| 7 | Mixmag Asia — K-Pop Genre Evolution | Genre deep-dive into how NewJeans incorporated UK garage, Baltimore club, and Jersey club into K-pop | documents/Mixmag Asia - The next phase of K-pop evolution a genuine approach or an appropriation of genres.txt |
-| 8 | Koreaboo — Records Shattered | Breakdown of Spotify, Melon, and Billboard records broken in their debut year | documents/Koreaboo - 10 Mind-Blowing Records Newjeans Have Shattered In Their First Year.txt |
-| 9 | Euronews — Guinness World Record | Covers NewJeans becoming the fastest K-pop act to hit 1 billion Spotify streams | documents/Euronews - NewJeans break Guinness World Record to become fastest K-pop act to hit 1 billion streams on Spotify.txt |
-| 10 | Koreaboo — Brand Deals | Overview of 15+ NewJeans brand partnerships including Coca-Cola, Nike, Levi's, McDonald's, and Apple | documents/Koreaboo - 15+ Of NewJeans’ Brand Deals That Prove Their Incredible Global Impact And Style Adaptability.txt |
-| 11 | CNBC — Contract Ruling | Covers the October 2025 court ruling upholding NewJeans' contracts with ADOR through 2029 | documents/CNBC - South Korea’s largest K-pop agency gains $644 million in market value after court upholds NewJeans’ contract.txt |
-| 12 | Korea Herald — Legal Aftermath | Covers NewJeans' legal dispute and battles extending into 2026 | documents/The Korea Herald - Min Hee-jin and Hybe’s legal battle grinds on — even as NewJeans exit fight.txt |
-| 13 | Korea Times — Danielle Exit | Dedicated coverage of Danielle's contract termination and each member's return status as of December 2025 | documents/The Korea Times - NewJeans full-group return derailed as Ador ends Danielle’s contract.txt |
-| 14 | K-Crush — Complete Guide | Comprehensive guide covering the group's music, members, legal summary, and 2026 status | documents/K-Crush - NewJeans The Complete Guide to the Group That Changed K-Pop (2026 Update).txt |
-| 15 | K-Crush — Member Status Timeline | Month-by-month tracker of each member's return or departure status, last updated May 2026 | documents/K-Crush - NewJeans Timeline Every Major Update on the ADOR Situation (Updated June 2026).txt |
+| # | Source | Type | URL | File path |
+|---|--------|------|-----|-----------|
+| 1 | Kprofiles | Profile and fun facts about each NewJeans member | https://kprofiles.com/newjeans-members-profile/ | documents/Kprofiles - NewJeans Members Profile.txt |
+| 2 | Wikipedia — NewJeans | General overview of the group's formation and history | https://en.wikipedia.org/wiki/NewJeans | documents/Wikipedia - NewJeans.txt |
+| 3 | Wikipedia — NewJeans Discography | Complete list of EPs, singles, and single albums with release dates and chart positions | https://en.wikipedia.org/wiki/NewJeans_discography | documents/Wikipedia - NewJeans Discography.txt |
+| 4 | Billboard — Chart Rise Explainer | Covers NewJeans' Billboard Hot 100 entries, Billboard 200 #1 album, and Group of the Year award | https://www.billboard.com/music/chart-beat/billboard-explains-newjeans-rise-on-charts-1235611739/ | documents/Billboard Explains - NewJeans’ Fast Rise on the Charts.txt |
+| 5 | Billboard — Gods/League of Legends Interview | Article covering their League of Legends Worlds 2023 anthem collaboration | https://www.billboard.com/music/pop/newjeans-interview-gods-league-of-legends-world-championships-2023-exclusive-1235519282/ | documents/Billboard - NewJeans Talks ‘Surreal’ Experience Performing ‘Gods’ at ‘League of Legends’ World Championships Exclusive.txt |
+| 6 | Harvard Crimson — Attention Review | Analysis of NewJeans' debut sound, Y2K aesthetic, and "newtro" cultural concept | https://www.thecrimson.com/article/2022/9/20/newjeans-kpop-girlgroup-hybe-attention-debut-single/ | documents/The Harvard Crimson - ‘Attention’ Review NewJeans Crafts K-Pop’s Y2K Time Capsule.txt |
+| 7 | Mixmag Asia — K-Pop Genre Evolution | Genre deep-dive into how NewJeans incorporated UK garage, Baltimore club, and Jersey club into K-pop | https://mixmag.asia/feature/new-jeans-k-pop-evolution-aesthetic-dance-music-genres-breaks-bass | documents/Mixmag Asia - The next phase of K-pop evolution a genuine approach or an appropriation of genres.txt |
+| 8 | Koreaboo — Records Shattered | Breakdown of Spotify, Melon, and Billboard records broken in their debut year | https://www.koreaboo.com/lists/records-newjeans-shattered-in-first-year/ | documents/Koreaboo - 10 Mind-Blowing Records Newjeans Have Shattered In Their First Year.txt |
+| 9 | Euronews — Guinness World Record | Covers NewJeans becoming the fastest K-pop act to hit 1 billion Spotify streams | https://www.euronews.com/culture/2023/05/09/newjeans-break-guinness-world-record-to-become-fastest-k-pop-act-to-hit-1-billion-streams- | documents/Euronews - NewJeans break Guinness World Record to become fastest K-pop act to hit 1 billion streams on Spotify.txt |
+| 10 | Koreaboo — Brand Deals | Overview of 15+ NewJeans brand partnerships including Coca-Cola, Nike, Levi's, McDonald's, and Apple | https://www.koreaboo.com/lists/newjeans-brand-ambassador-deals-global-impact-style-adaptability/ | documents/Koreaboo - 15+ Of NewJeans’ Brand Deals That Prove Their Incredible Global Impact And Style Adaptability.txt |
+| 11 | CNBC — Contract Ruling | Covers the October 2025 court ruling upholding NewJeans' contracts with ADOR through 2029 | https://www.cnbc.com/2025/10/30/newjeans-contract-ruling-valid-hybe-gains-almost-630-million-.html | documents/CNBC - South Korea’s largest K-pop agency gains $644 million in market value after court upholds NewJeans’ contract.txt |
+| 12 | Korea Herald — Legal Aftermath | Covers NewJeans' legal dispute and battles extending into 2026 | https://www.koreaherald.com/article/10640428 | documents/The Korea Herald - Min Hee-jin and Hybe’s legal battle grinds on — even as NewJeans exit fight.txt |
+| 13 | Korea Times — Danielle Exit | Dedicated coverage of Danielle's contract termination and each member's return status as of December 2025 | https://www.koreatimes.co.kr/entertainment/k-pop/20251229/newjeans-full-group-return-derailed-as-ador-ends-danielles-contract | documents/The Korea Times - NewJeans full-group return derailed as Ador ends Danielle’s contract.txt |
+| 14 | K-Crush — Complete Guide | Comprehensive guide covering the group's music, members, legal summary, and 2026 status | https://k-crush.com/newjeans-complete-guide-2026/ | documents/K-Crush - NewJeans The Complete Guide to the Group That Changed K-Pop (2026 Update).txt |
+| 15 | K-Crush — Member Status Timeline | Month-by-month tracker of each member's return or departure status, last updated May 2026 | https://k-crush.com/newjeans-timeline-2026-updates/ | documents/K-Crush - NewJeans Timeline Every Major Update on the ADOR Situation (Updated June 2026).txt |
 
 ---
 
@@ -51,14 +52,14 @@ The domain I chose is on the K-Pop group NewJeans, with many talking points such
      - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
      - What your final chunk count was across all documents -->
 
-**Chunk size:**
-250 tokens
-**Overlap:**
-50 tokens
-**Why these choices fit your documents:**
-Given that the embedding model I'm using has a 256 token context length and that some of my sources are quite lengthy, I think 250 tokens is a reasonable chunk size to maintain a balance between precision and contextual meaning. It's a size that can contain a focused topic, paragraph, or interview answer without having too much noise. A 50 token overlap helps retain a bit of context from the previous chunk without repeating too much information since it is only around a 20% portion.
-**Final chunk count:**
-124 chunks from 15 documents
+- **Chunk size:**
+  - 250 tokens
+- **Overlap:**
+  - 50 tokens
+- **Why these choices fit your documents:**
+  - Given that the embedding model I'm using has a 256 token context length and that some of my sources are quite lengthy, I think 250 tokens is a reasonable chunk size to maintain a balance between precision and contextual meaning. It's a size that can contain a focused topic, paragraph, or interview answer without having too much noise. A 50 token overlap helps retain a bit of context from the previous chunk without repeating too much information since it is only around a 20% portion.
+- **Final chunk count:**
+  - 124 chunks from 15 documents
 
 **Sample chunks (from `chunking.py`):**
 
@@ -153,6 +154,29 @@ The company noted rebuilding trust with fans and the public would require time a
 Ador added that it is currently discussing when and how to publicly address various controversies
 ```
 
+**Testing different chunking strategies:**
+
+*This testing (for stretch feature) was done after the completion of the whole pipeline. The exact test queries are listed in the [Evaluation Report](#evaluation-report) section. The table below shows an overly summarized version of each question, using one to two keywords that describe them.*
+
+To justify the 250-token / 50-overlap choice, I tested three fixed-size configs by rebuilding the vector database and re-running the same 5 evaluation queries through the UI for each. The table below shows how many chunks each config produced and the top-1 cosine similarity per query, with the answer outcome.
+
+
+| Query | 250 / 50 (124 chunks) | 350 / 50 (83 chunks) | 100 / 25 (323 chunks) |
+|-------|------------------------|-----------------------|------------------------|
+| 1 — Members | 0.77 ✅ | 0.77 ✅ | 0.83 ✅ |
+| 2 — Label | 0.64 ✅ | 0.64 ✅ | 0.70 ✅ (top hit off-topic) |
+| 3 — First EP | 0.66 ✅ | 0.64 ✅ | 0.75 ⚠️ (answered with a single, "Cookie", not the EP) |
+| 4 — Recent release | 0.72 ✅ (correctly refused) | 0.71 ❌ (wrong: "Zero") | 0.80 ❌ (wrong: "Ditto/OMG") |
+| 5 — Terminated | 0.63 ✅ | 0.63 ✅ | 0.66 ✅ |
+
+**Observations:**
+
+- **Smaller chunks (100/25)** raised similarity scores across every query and I believe it's because shorter chunks are more likely to be focused and concentrated, allowing them to match more closely to detailed query. However, the higher scores can sometimes be misleading. For example, Q3 fragmented the EP fact from its name (so the model answered with a single instead of the EP), Q2 ranked an off-topic "Brand Deals" chunk as the top hit, and Q4 still gave a wrong answer rather than refusing to answer and didn't retrieve from the discography Wikipedia page. This shows **a higher similarity score does not mean a better answer.**
+- **Larger chunks (350/50)** produced fewer and broader chunks, which merges more sentences into each chunk. At 250 tokens, the sentence "NewJeans released its latest single, 'Zero' – a collaboration with Coca-Cola – on 3 April 2023" was placed in a separate chunk that did not rank in question's top results, so the model saw no clearly-framed "latest release" claim and correctly refused. At 350 tokens, the larger boundary fused that sentence into the top-ranked Euronews chunk, so the model picked it up and answered "Zero", which is wrong since the expected answer is "Supernatural".
+- **250/50 was the only config** that answered Q1–Q3 and Q5 correctly and safely refused Q4 instead of hallucinating. Smaller chunks fragment facts across boundaries; larger chunks can include noise/distractions and overflow the model limit. 250 tokens sits in the middle — large enough to keep a fact intact, small enough to stay precise and under the 256-token cap.
+- It's important to note that I didn't see the NewJeans Discography Wikipedia page ever be retrieved and ranked in the top-k chunks for all three chunking configurations. This little observation can explain why the system confidently answers wrong in two of the chunking configurations, as it is answering based on the chunks retrieved AND was not provided a specific timeframe of what "recent" is in the query.
+This comparison is the empirical basis for keeping the 250-token / 50-overlap strategy described above.
+
 ---
 
 ## Embedding Model
@@ -163,12 +187,12 @@ Ador added that it is currently discussing when and how to publicly address vari
      Consider: context length limits, multilingual support, accuracy on domain-specific text,
      latency, and local vs. API-hosted. -->
 
-**Model used:**
-all-MiniLM-L6-v2 via sentence-transformers with top_k=4.
-This embedding model was recommended in the project write-up and also the same one presented in the lab. A top_k of 4 is enough to not have the system feel constrained during retrieval, adding in some flexibility to the chunks it retrieves without adding too much noise or irrelevant chunks to the query.
+- **Model used:**
+  - all-MiniLM-L6-v2 via sentence-transformers with top_k=4.
+  - This embedding model was recommended in the project write-up and also the same one presented in the lab. A top_k of 4 is enough to not have the system feel constrained during retrieval, adding in some flexibility to the chunks it retrieves without adding too much noise or irrelevant chunks to the its context to generate a response.
 
-**Production tradeoff reflection:**
-If this was deployed for production and real users, a I'd prioritize accuracy on domain-specific text and latency over context length and multilingual support. The sources I use are mostly English and don't have many non-English terms. It would help expand the userbase to more languages, but I wouldn't say its more important to the user experience of getting highly relevant and quality responses based on the domain quickly. I don't think context length needs to be extended immensely since the chunk sizes for my sources seem balanced already.
+- **Production tradeoff reflection:**
+  - If this was deployed for production and real users, a I'd prioritize accuracy on domain-specific text and latency over context length and multilingual support. The sources I use are mostly English and don't have many non-English terms. It would help expand the userbase to more languages, but I wouldn't say its more important to the user experience of getting highly relevant and quality responses based on the domain quickly. I don't think context length needs to be extended immensely since the chunk sizes for my sources seem balanced already.
 ---
 
 ## Retrieval Test Results
@@ -184,7 +208,7 @@ Each query below was run through `retrieve()` (top-k = 4). Chunks are listed mos
 | 3 | 0.633 | Wikipedia - NewJeans (chunk 0) |
 | 4 | 0.622 | Kprofiles - NewJeans Members Profile (chunk 1) |
 
-*Why these are relevant:* All four chunks are brief informational passages about the group, which is exactly where a member roster lives. The #2 chunk (Kprofiles) explicitly states "The members are Minji, Hanni, Haerin, and Hyein" which directly answers the query. The top result (K-Crush guide intro) and the Wikipedia intro both open by introducing the group and its lineup, so the retriever correctly favored the documents' opening sections over the other deeper chunks in the sources about charts or legal disputes. The two highest scores (0.70+) reflect that the question's wording ("members of NewJeans") closely matches the profile/overview phrasing in those chunks.
+*Why these are relevant:* All four chunks are brief informational passages about the group, which is exactly where a list of members is usually present. The #2 chunk (Kprofiles) explicitly states "The members are Minji, Hanni, Haerin, and Hyein" which directly answers the query. The top result (K-Crush guide intro) and the Wikipedia intro both open by introducing the group and its lineup, so the retriever correctly favored the documents' opening sections over the other deeper chunks in the sources about charts or legal disputes. The two highest scores (0.70+) reflect that the question's wording ("members of NewJeans") closely matches the profile/overview phrasing in those chunks.
 
 **Query 2: "What label are NewJeans signed under?"**
 
@@ -217,8 +241,8 @@ Each query below was run through `retrieve()` (top-k = 4). Chunks are listed mos
      Do not just say "I told it to use the documents" — show the actual instruction or explain
      the mechanism. -->
 
-**System prompt grounding instruction:**
-In the system prompt, I made sure that it knew it's domain it will be answering in (NewJeans) and the rules to follow. The most important rule is to answer solely based on the context of the retrieved chunks I would attach. If it was not confident in answering the question based on the context provided, it will state that it doesn't know rather than stating a possibly wrong answer. This is so that the system won't answer questions that are out of its scope or when it doesn't have the necessary information for it. I also tell it to cite its sources inline with bracketed numbers similar to an academic style or a wiki. I pass in the context in the format of a mapped list, where each chunk is a numbered and source-labeled block with its text.
+- **System prompt grounding instruction:**
+  - In the system prompt, I made sure that it knew it's domain it will be answering in (NewJeans) and the rules to follow. The most important rule is to answer solely based on the context of the retrieved chunks I would attach. If it was not confident in answering the question based on the context provided, it will state that it doesn't know rather than stating a possibly wrong answer. This is so that the system won't answer questions that are out of its scope or when it doesn't have the necessary information for it. I also tell it to cite its sources inline with bracketed numbers similar to an academic style or a wiki. I pass in the context in the format of a mapped list, where each chunk is a numbered and source-labeled block with its text.
 ```
 """\
 You are a knowledgeable assistant answering questions about the K-pop group \
@@ -239,8 +263,8 @@ inline [n] markers. The source list is added automatically.
 5. Be concise and factual. Do not repeat the question or pad the answer.\
 """
 ```
-**How source attribution is surfaced in the response:**
-Sources are cited inline with the generated response using bracketed numbers similar to an academic style or wiki. The model is instructed to cite its sources, which comes from the context that gets passed in. I also concatenate a mapped list of sources that matches to the numbers at the end of its answer.
+- **How source attribution is surfaced in the response:**
+  - Sources are cited inline with the generated response using bracketed numbers similar to an academic style or wiki. The system is instructed to cite its sources, which comes from the context that gets passed in. I also concatenate a mapped list of sources that matches to the numbers at the end of its answer.
 
 **Example responses:**
 
@@ -270,6 +294,39 @@ I don't have enough information in the provided sources to answer that.
 ```
 
 The out-of-scope query has no relevant chunks in the vector database, so rather than guessing, the system follows its grounding instruction and states that it can't answer.
+
+---
+
+## Query Interface
+
+The interface is a Gradio app (`app.py`) that runs the full pipeline (`retrieve()` → `generate_response()`) for each question.
+
+**Input field:**
+- **Your question** - a text box where the user asks a question about NewJeans. The query can be submitted either by pressing the "Ask" button or by hitting the Enter key while typing in the box.
+
+**Output fields:**
+- **Answer** - This shows the grounded response generated by the model, including inline `[n]` citations and an auto-appended numbered **Sources:** list. If the vector database has no relevant information, this field shows the refusal message instead.
+- **Retrieved from** - This shows the source documents that the supporting chunks came from, each with its best cosine similarity score.
+
+**Sample interaction transcript:**
+
+```
+Your question:  Who are the members of NewJeans?
+
+Answer:
+The members of NewJeans are Minji, Hanni, Haerin, and Hyein [1][2]. They were
+originally a 5-member group, but Danielle's contract was terminated on
+December 29, 2025 [2].
+
+Sources:
+[1] K-Crush - NewJeans The Complete Guide to the Group That Changed K-Pop (2026 Update)
+[2] Kprofiles - NewJeans Members Profile
+
+Retrieved from:
+• K-Crush - NewJeans The Complete Guide to the Group That Changed K-Pop (2026 Update) (similarity 0.77)
+• Kprofiles - NewJeans Members Profile (similarity 0.70)
+• Wikipedia - NewJeans (similarity 0.63)
+```
 
 ---
 
@@ -305,17 +362,17 @@ The out-of-scope query has no relevant chunks in the vector database, so rather 
      "The embedding model treated the professor's nickname as out-of-vocabulary and returned
      results from an unrelated review" is an explanation. -->
 
-**Question that failed:**
-"What was NewJeans' most recent music release?" (expected answer: "Supernatural")
+- **Question that failed:**
+  - "What was NewJeans' most recent music release?" (expected answer: "Supernatural")
 
-**What the system returned:**
- I don't have enough information in the provided sources to answer that, as the most recent information is from 2023 [1][2][3] and the guide is from 2026 [4], but it does not specify their most recent music release.<br><br>Sources:<br>[1] Euronews - NewJeans break Guinness World Record to become fastest K-pop act to hit 1 billion streams on Spotify<br>[2] Wikipedia - NewJeans<br>[3] Billboard Explains - NewJeans’ Fast Rise on the Charts<br>[4] K-Crush - NewJeans The Complete Guide to the Group That Changed K-Pop (2026 Update) 
+- **What the system returned:**
+   - I don't have enough information in the provided sources to answer that, as the most recent information is from 2023 [1][2][3] and the guide is from 2026 [4], but it does not specify their most recent music release.<br><br>Sources:<br>[1] Euronews - NewJeans break Guinness World Record to become fastest K-pop act to hit 1 billion streams on Spotify<br>[2] Wikipedia - NewJeans<br>[3] Billboard Explains - NewJeans’ Fast Rise on the Charts<br>[4] K-Crush - NewJeans The Complete Guide to the Group That Changed K-Pop (2026 Update) 
 
-**Root cause (tied to a specific pipeline stage):**
-I think this relates to the retrieval part of the pipeline. I expected the system to pull from the Wikipedia page that was solely focused on NewJeans' discography, but due to the structure and content of the page, the system couldn't relate the chunks/source to the question. The discography page uses specific words in the table such as "extended play," but the question might be too broad asking for "music" instead of "extended play," which would've helped retrieve chunks from this source. The question also didn't specify a specific timeframe for what "recent" could mean, because it seemed like the system didn't consider 2023 as recent.
+- **Root cause (tied to a specific pipeline stage):**
+  - I think this relates to the retrieval part of the pipeline and possibly ingestion (processing and extracting text from documents) as well. I expected the system to pull from the Wikipedia page that was solely focused on NewJeans' discography, but due to the structure and content of the page, the system couldn't relate the chunks/source to the question. The discography page uses specific words in the table such as "extended play," but the question might be too broad asking for "music" instead of "extended play," which would've helped retrieve chunks from this source. The question also didn't specify a specific timeframe for what "recent" could mean, because it seemed like the system didn't consider 2023 as recent.
 
-**What you would change to fix it:**
-This makes me think if there was a larger "k" value for more chunks in the context, this system maybe would've answered more accurately, but it ultimately depends if the embeddings/contextual meanings are calculated to be close to each other. Another approach could be storing a short summary of what each source is about or somehow maintain context of what the sources provide rather than just the name of it and the text is contains. Maybe then it could relate a discography timeline wiki page to the question.
+- **What you would change to fix it:**
+  - This makes me think if there was a larger "k" value for more chunks in the context, this system maybe would've answered more accurately, but it ultimately depends if the embeddings/contextual meanings are calculated to be close to each other. Another approach could be storing a short summary of what each source is about or somehow maintain context of what the sources provide rather than just the name of it and the text is contains. Maybe then it could relate a discography timeline wiki page to the question.
 
 ---
 
@@ -324,10 +381,10 @@ This makes me think if there was a larger "k" value for more chunks in the conte
 <!-- Reflect on how planning.md shaped your implementation.
      Answer both questions with at least 2–3 sentences each. -->
 
-**One way the spec helped you during implementation:**
-
-**One way your implementation diverged from the spec, and why:**
-
+- **One way the spec helped you during implementation:**
+  - Planning beforehand actually helped me figure out what I wanted to implement and how I wanted to implement parts of the RAG pipeline. Rather than approaching this project as a whole, it helped me conceptually grasp the flow of the pipeline by breaking it down into stages. Breaking the pipeline into stages helped me find natural "checkpoints" or milestones like how the project write up was set up. I could fully understand the pipeline and not lose sight of the main concepts to learn.
+- **One way your implementation diverged from the spec, and why:**
+  - I'd say a lot of changes happened at the chunking stage. My initial plans were to use semantic chunking with 350 tokens. Semantic chunking made a lot of sense with my document types and I instinctually planned to use it. I also chose a 350 token chunk size because it seemed like a decent size that isn't too large like 500 tokens where there could be too much noise. I initially combined these two ideas and later realized how conflicting it is to use semantic chunking, which chunks text based on centextual meaning and not a fixed-size, while trying to enforce a chunk size. I modified my plan to then just use fixed-size chunking without the need of LangGraph tools that I planned to use for semantic chunking. I also then reduced the chunk size to 250 tokens after learning that the embedding model I use has a context length of 256 tokens, meaning my 350 token chunks would be truncated and possibly lose information.  
 ---
 
 ## AI Usage
@@ -344,11 +401,17 @@ This makes me think if there was a larger "k" value for more chunks in the conte
 **Instance 1**
 
 - *What I gave the AI:*
+     - I gave Claude my planning.md, specifically the Chunking Strategy and Architecture Diagram to implement chunk_text() for my chunking stage of the pipeline.
 - *What it produced:*
+     - It produced a function that would take in a list of documents (presented as a dictionary to hold metadata of the source), use fixed-size chunking of 350 tokens, and returns a list of chunks in the form of dictionaries with metadata.
 - *What I changed or overrode:*
+     - I overrode the chunk size from 350 chunks to 250 chunks afterwards to take into account the context length of the embedding model being 256 tokens. I didn't want my chunks to be truncated when being passed into context for the model.
 
 **Instance 2**
 
-- *What I gave the AI:*
+- *What I gave the AI:* 
+     - I gave Claude my planning.md, specifically the Architecture Diagram and also my requirements of a generate_response() function. I specified the inputs of the user query and retrieved chunks. I also asked for a detailed system prompt to ground the answer generation (only answering based on context, if it doesn't know the answer then say so, and to cite sources in answer), and a prompt template to include context from the retrieved chunks. 
 - *What it produced:*
+     - It produced the function exactly as what I asked for. It prompted Groq using a system prompt and instructions I had asked for and its answers properly cited sources.
 - *What I changed or overrode:*
+     - I wanted to change the style of how sources were cited. The function initially cited sources inline with the whole source name like (Source: document name), which I didn't like as it made the answer seem cluttered. I redirected Claude to implement to use a numbered inline citation and to have the source list appear at the end of the response like how a Wikipedia page would. This helped make the response feel less cluttered and more clear.
